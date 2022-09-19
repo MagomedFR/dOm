@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <title>Super App</title>
+</head>
+<body>
+  <script>
+    const text = document.createElement('p')
+    text.textContent = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos culpa saepe dolorum eius sed quis debitis, ullam voluptatibus laborum esse earum totam nobis reprehenderit quasi, dicta iusto eaque cum.'    
+    text.style.width = '30%'
+    text.style.borderRadius = '15px'
+    text.style.border = '2px solid red'
+    text.style.padding = '10px'
+    text.style.margin = 'auto'
+    document.body.prepend(text);
+    
+    const ul = document.createElement('ul')
+    const item_1 = document.createElement('li')
+    const item_2 = document.createElement('li')
+    const item_3 = document.createElement('li')
+
+    const url_1 = document.createElement('a')
+    const url_2 = document.createElement('a')
+    const url_3 = document.createElement('a')
+
+    url_1.setAttribute('href', '/https://github.com/intocode')
+    url_2.setAttribute('href', '/https://www.instagram.com')
+    url_3.setAttribute('href', '/https://www.google.ru')
+
+    url_1.textContent = 'intocode';
+    url_2.textContent = 'CSS';
+    url_3.textContent = 'JavaScript';
+    
+
+    ul.style.display = 'flex'
+    ul.style.justifyContent = 'space-between'
+    ul.style.flexDirection = 'row'
+    ul.style.listStyleType = 'none'
+    ul.style.margin = 'auto'
+    ul.style.width = '30%'
+    ul.style.textAlign = 'auto'
+    ul.style.textAlign = 'center'
+    ul.style.padding = '0'
+    ul.style.marginTop = '10px'
+
+    item_1.append(url_1)
+    item_2.append(url_2)
+    item_3 .append(url_3)
+    ul.append(item_1, item_2, item_3);
+    document.body.append(ul)
+  </script>
+</body>
+</html>
